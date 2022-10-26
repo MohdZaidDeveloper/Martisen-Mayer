@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+.about {
+  @include flex(center, center, row, 200px);
+  background-color: $dark-green;
+  padding: 100px 0;
+
+  .left-img {
+    width: 360px;
+    height: 550px;
+  }
+
+  .right-section {
+    @include flex(center, center, column, 100px);
+
+    .content {
+      @include flex(flex-start, flex-start, column, 20px);
+      width: 360px;
+      h2 {
+        font-size: 45px;
+        color: $kinda-white;
+      }
+
+      p {
+        font-size: 16px;
+        color: $kinda-white;
+        line-height: 30px;
+        font-weight: 400;
+      }
+
+      button {
+        background-color: transparent;
+        color: $light-green;
+        cursor: pointer;
+      }
+    }
+
+    img {
+      width: 320px;
+    }
+  }
+}

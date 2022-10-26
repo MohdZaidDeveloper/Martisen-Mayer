@@ -1,0 +1,81 @@
+@import "../../App.scss";
+
+.services {
+  @include flex(center, flex-start, column, 100px);
+  padding: 100px 150px;
+
+  .content {
+    @include flex(center, flex-start, column, 20px);
+    text-align: left;
+
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .cards {
+    @include flex(flex-start, center, row, 50px);
+    flex-wrap: wrap;
+
+    .card {
+      @include flex(flex-start, center, column, 60px);
+
+      background-color: $light-gray;
+      padding: 50px;
+      width: 350px;
+      height: 500px;
+
+      .top {
+        @include flex(center, flex-start, column, 40px);
+
+        img {
+          width: 70px;
+        }
+
+        h3 {
+          font-size: 25px;
+        }
+      }
+
+      .bottom {
+        p {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+    .card-reverse {
+      @include flex(flex-start, center, column, 60px);
+
+      background-color: $dark-green;
+      padding: 50px;
+      width: 350px;
+      height: 500px;
+
+      .top {
+        @include flex(center, flex-start, column, 40px);
+
+        img {
+          width: 70px;
+        }
+
+        h3 {
+          font-size: 25px;
+          color: $kinda-white;
+        }
+      }
+
+      .bottom {
+        p {
+          font-size: 18px;
+          line-height: 30px;
+          color: $kinda-white;
+        }
+      }
+    }
+  }
+}

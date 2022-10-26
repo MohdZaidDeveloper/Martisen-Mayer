@@ -1,0 +1,31 @@
+@import "../../App.scss";
+
+
+.hero{
+    width: 70%;
+    height: 88vh;
+    @include flex(center, flex-start, column, 50px);
+    padding: 0 100px;
+
+    h1{
+        font-size: 70px;
+        font-weight: 800;
+    }
+
+    p{
+        font-size: 24px;
+        color: $dark-gray;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    button{
+        background-color: $light-green;
+        padding: 15px 40px;
+        border-radius: 30px;
+        color: $kinda-black;
+        font-size: 20px;
+        font-weight: 600;
+        word-spacing: 4px;
+    }
+}

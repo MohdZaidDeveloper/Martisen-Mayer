@@ -1,0 +1,89 @@
+@import "../../App.scss";
+
+.bullshit {
+  @include flex(center, center, row, 100px);
+
+  .left-section {
+    @include flex(center, flex-start, column, 50px);
+
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .list {
+      @include flex(center, center, row, 50px);
+
+      .item {
+        @include flex(center, flex-start, column, 20px);
+
+        .list-item {
+          @include flex(flex-start, center, row, 20px);
+
+          img {
+            width: 20px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-section {
+    img {
+      width: 450px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .bullshit {
+    @include flex(center, center, row, 80px);
+
+    .left-section {
+      @include flex(center, flex-start, column, 40px);
+
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .list {
+        @include flex(center, center, row, 40px);
+
+        .item {
+          @include flex(center, flex-start, column, 17px);
+
+          .list-item {
+            @include flex(flex-start, center, row, 15px);
+
+            img {
+              width: 17px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .right-section {
+      img {
+        width: 380px;
+      }
+    }
+  }
+}
+
+

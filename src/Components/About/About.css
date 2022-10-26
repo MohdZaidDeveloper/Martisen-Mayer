@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 200px;
+  background-color: #10282F;
+  padding: 100px 0;
+}
+.about .left-img {
+  width: 360px;
+  height: 550px;
+}
+.about .right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.about .right-section .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+}
+.about .right-section .content h2 {
+  font-size: 45px;
+  color: #f4f6f8;
+}
+.about .right-section .content p {
+  font-size: 16px;
+  color: #f4f6f8;
+  line-height: 30px;
+  font-weight: 400;
+}
+.about .right-section .content button {
+  background-color: transparent;
+  color: #0FCEA6;
+  cursor: pointer;
+}
+.about .right-section img {
+  width: 320px;
+}/*# sourceMappingURL=About.css.map */

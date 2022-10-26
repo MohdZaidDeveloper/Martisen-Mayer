@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 100px;
+  padding: 100px 150px;
+}
+.services .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+.services .content h2 {
+  font-size: 50px;
+}
+.services .content p {
+  font-size: 16px;
+}
+.services .cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.services .cards .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  background-color: #F7F9FA;
+  padding: 50px;
+  width: 350px;
+  height: 500px;
+}
+.services .cards .card .top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+.services .cards .card .top img {
+  width: 70px;
+}
+.services .cards .card .top h3 {
+  font-size: 25px;
+}
+.services .cards .card .bottom p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.services .cards .card-reverse {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  background-color: #10282F;
+  padding: 50px;
+  width: 350px;
+  height: 500px;
+}
+.services .cards .card-reverse .top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+.services .cards .card-reverse .top img {
+  width: 70px;
+}
+.services .cards .card-reverse .top h3 {
+  font-size: 25px;
+  color: #f4f6f8;
+}
+.services .cards .card-reverse .bottom p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #f4f6f8;
+}/*# sourceMappingURL=Services.css.map */

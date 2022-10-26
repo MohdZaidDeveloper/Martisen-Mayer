@@ -1,0 +1,25 @@
+@import "../../App.scss";
+
+
+.brands{
+   @include flex(center, center, column, 100px) ;
+   background-color: $kinda-white;
+   padding: 100px 200px;
+
+   h2{
+    font-size: 40px;
+    text-align: center;
+      span{
+        color: $light-green
+      }
+   }
+
+   .brand-img{
+       @include flex(center, center, row, 60px) ;
+       flex-wrap: wrap;
+
+       img{
+        width: 100px;
+       }
+   }
+}

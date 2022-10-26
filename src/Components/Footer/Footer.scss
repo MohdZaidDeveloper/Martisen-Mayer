@@ -1,0 +1,82 @@
+@import "../../App.scss";
+
+footer {
+  background-color: $dark-green;
+  @include flex(center, center, column, 100px);
+  color: $kinda-white;
+
+  .upper-section {
+    width: 100%;
+    @include flex(space-between, center, row, 0px);
+    padding: 50px;
+
+    .content {
+      @include flex(space-between, flex-start, row, 100px);
+
+      .links {
+        @include flex(center, flex-start, column, 20px);
+
+        a {
+          color: $kinda-white;
+        }
+      }
+    }
+  }
+
+  .lower-section {
+    @include flex(space-between, center, row, 0);
+    padding: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    @include flex(center, center, column, 50px);
+
+    .upper-section {
+      width: 100%;
+      @include flex(space-between, center, row, 0px);
+      padding: 50px 40px;
+
+      .content {
+        @include flex(space-between, flex-start, row, 70px);
+      }
+    }
+
+    .lower-section {
+      padding: 10px 50px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  footer {
+
+    @include flex(center, center, column, 20px);
+padding: 50px 20px;
+text-align: center;
+    .upper-section {
+
+      @include flex(center, center, column, 20px);
+  padding: 0;
+
+      .content {
+        @include flex(center,center, column, 30px);
+
+        .links {
+          @include flex(center, center, column, 20px);
+
+          
+        }
+      }
+    }
+
+    .lower-section {
+      @include flex(space-between, center, column, 20px);
+      padding: 0;
+  
+    }
+  }
+}

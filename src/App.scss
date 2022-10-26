@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Colors
+$kinda-white: #f4f6f8;
+$kinda-black: #080c0d;
+$light-green: #0FCEA6;
+$light-blue: #b7c5ca;
+$dark-gray: #433a33;
+$light-gray: #F7F9FA;
+$kinda-green: #708187;
+$dark-green: #10282F;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span,
+li {
+  font-family: "Montserrat", sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button{
+  outline: none;
+  border: none;
+}
+
+
+@mixin flex($justify, $align, $direction, $gap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+

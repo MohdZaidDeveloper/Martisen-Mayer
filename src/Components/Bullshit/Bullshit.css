@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.bullshit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+}
+.bullshit .left-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+.bullshit .left-section h2 {
+  font-size: 50px;
+}
+.bullshit .left-section p {
+  font-size: 20px;
+}
+.bullshit .left-section .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+.bullshit .left-section .list .item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.bullshit .left-section .list .item .list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.bullshit .left-section .list .item .list-item img {
+  width: 20px;
+}
+.bullshit .left-section .list .item .list-item p {
+  font-size: 16px;
+}
+.bullshit .right-section img {
+  width: 450px;
+}
+
+@media (max-width: 1300px) {
+  .bullshit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+  }
+  .bullshit .left-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .bullshit .left-section h2 {
+    font-size: 40px;
+  }
+  .bullshit .left-section p {
+    font-size: 15px;
+  }
+  .bullshit .left-section .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .bullshit .left-section .list .item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .bullshit .left-section .list .item .list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .bullshit .left-section .list .item .list-item img {
+    width: 17px;
+  }
+  .bullshit .left-section .list .item .list-item p {
+    font-size: 14px;
+  }
+  .bullshit .right-section img {
+    width: 380px;
+  }
+}/*# sourceMappingURL=Bullshit.css.map */

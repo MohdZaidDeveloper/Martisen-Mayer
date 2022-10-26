@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.hero {
+  width: 70%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 100px;
+}
+.hero h1 {
+  font-size: 70px;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 24px;
+  color: #433a33;
+  line-height: 35px;
+  font-weight: 500;
+}
+.hero button {
+  background-color: #0FCEA6;
+  padding: 15px 40px;
+  border-radius: 30px;
+  color: #080c0d;
+  font-size: 20px;
+  font-weight: 600;
+  word-spacing: 4px;
+}/*# sourceMappingURL=Hero.css.map */

@@ -1,0 +1,250 @@
+@import "../../App.scss";
+
+.contact {
+  @include flex(center, flex-start, row, 100px);
+  margin: 200px 0;
+  padding: 0 100px;
+
+  .form {
+    @include flex(center, flex-start, column, 50px);
+    background-color: $light-gray;
+    padding: 50px;
+    width: 45%;
+
+    p {
+      font-size: 16px;
+      margin: 20px 0;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    form {
+      width: 100%;
+
+      p {
+        color: black;
+        font-weight: 600;
+        margin: 20px 0;
+      }
+
+      input {
+        margin-bottom: 10px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid lightgray;
+        padding: 10px;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      select {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid lightgray;
+        padding: 10px;
+        font-size: 16px;
+      }
+      textarea {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid lightgray;
+      }
+      button {
+        margin-top: 20px;
+        background-color: $light-green;
+        padding: 15px 40px;
+        border-radius: 30px;
+        color: $kinda-black;
+        font-size: 20px;
+        font-weight: 600;
+        word-spacing: 4px;
+      }
+    }
+  }
+
+  .content {
+    @include flex(center, flex-start, column, 50px);
+    margin-top: 100px;
+    width: 60%;
+
+    h2 {
+      font-size: 60px;
+    }
+
+    .card {
+      @include flex(center, center, row, 50px);
+
+      img {
+        width: 120px;
+      }
+
+      .text {
+        @include flex(center, flex-start, column, 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .contact {
+    @include flex(center, flex-start, row, 60px);
+    margin: 100px 0;
+    padding: 0 80px;
+
+    .form {
+      @include flex(center, flex-start, column, 40px);
+      padding: 50px;
+      width: 50%;
+
+      p {
+        margin: 15px 0;
+      }
+
+      form {
+        p {
+          margin: 15px 0;
+        }
+
+        input {
+          padding: 8px;
+          font-size: 16px;
+        }
+
+        select {
+          padding: 8px;
+          font-size: 15px;
+        }
+
+        button {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .content {
+      @include flex(center, flex-start, column, 50px);
+      margin-top: 80px;
+      width: 50%;
+
+      h2 {
+        font-size: 50px;
+      }
+
+      .card {
+        @include flex(center, center, row, 40px);
+
+        img {
+          width: 100px;
+        }
+
+        .text {
+          @include flex(center, flex-start, column, 10px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    @include flex(center, center, column, 60px);
+    margin: 50px 0;
+    padding: 30px;
+
+    .form {
+      @include flex(center, center, column, 40px);
+      padding: 50px;
+      width: 80%;
+
+      p {
+        margin: 15px 0;
+      }
+
+      form {
+        p {
+          margin: 15px 0;
+        }
+
+        input {
+          padding: 8px;
+          font-size: 16px;
+        }
+
+        select {
+          padding: 8px;
+          font-size: 15px;
+        }
+
+        button {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .content {
+      @include flex(center, center, column, 50px);
+      margin-top: 40px;
+      width: 80%;
+
+      h2 {
+        font-size: 50px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+
+      .card {
+        @include flex(center, center, row, 40px);
+
+        img {
+          width: 100px;
+        }
+
+        .text {
+          @include flex(center, flex-start, column, 10px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    @include flex(center, center, column, 30px);
+    margin: 30px 0;
+    padding: 20px;
+
+    .form {
+      @include flex(center, center, column, 30px);
+      width: 90%;
+      padding: 30px;
+    }
+
+    .content {
+      @include flex(center, center, column, 30px);
+      margin-top: 30px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .card {
+        @include flex(center, center, row, 30px);
+
+        img {
+          width: 70px;
+        }
+
+        .text {
+          @include flex(center, flex-start, column, 10px);
+        }
+      }
+    }
+  }
+}
